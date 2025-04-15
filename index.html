@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Workshop Invitation</title>
     <style>
-        /* CSS Reset for consistency */
         * {
             margin: 0;
             padding: 0;
@@ -32,13 +31,57 @@
         header {
             background-color: #3498db;
             color: white;
-            padding: 20px;
             text-align: center;
+            position: relative;
+        }
+        
+        .header-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+        
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 0 20px;
         }
         
         h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 10px;
+            background: linear-gradient(90deg, 
+                #FF5252, /* Red */
+                #FF4081, /* Pink */
+                #E040FB, /* Purple */
+                #7C4DFF, /* Deep Purple */
+                #536DFE, /* Indigo */
+                #448AFF, /* Blue */
+                #40C4FF, /* Light Blue */
+                #18FFFF, /* Cyan */
+                #64FFDA, /* Teal */
+                #69F0AE, /* Green */
+                #B2FF59, /* Light Green */
+                #EEFF41, /* Lime */
+                #FFFF00, /* Yellow */
+                #FFD740, /* Amber */
+                #FFAB40, /* Orange */
+                #FF6E40  /* Deep Orange */
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header-subtitle {
+            font-size: 1.2rem;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
         .event-details {
@@ -85,8 +128,11 @@
 <body>
     <div class="container">
         <header>
-            <h1>You're Invited!</h1>
-            <p>Join us for an exciting tech workshop</p>
+            <img class="header-image" src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Workshop attendees collaborating">
+            <div class="header-content">
+                <h1>YOU'RE INVITED!</h1>
+                <p class="header-subtitle">Join Our Exciting Tech Workshop</p>
+            </div>
         </header>
         
         <div class="event-details">
@@ -94,13 +140,13 @@
                 <strong>Event:</strong> Frontend Development Workshop
             </div>
             <div class="detail-item">
-                <strong>Date:</strong> Saturday, November 18, 2025
+                <strong>Date:</strong> Saturday, Aprial 18, 2025
             </div>
             <div class="detail-item">
                 <strong>Time:</strong> 10:00 AM - 4:00 PM
             </div>
             <div class="detail-item">
-                <strong>Location:</strong> Some Location, 123 Developer Street
+                <strong>Location:</strong> 14 Bedford Row, London EC1N 2PB
             </div>
             <div class="detail-item">
                 <strong>What to bring:</strong> Laptop, charger, and curiosity!
@@ -112,8 +158,8 @@
         </div>
         
         <footer>
-            <p>Questions? <a href="help@iroshan.co.uk">contact@iroshan.co.uk</a></p>
-            <p>&copy; 2023 iroshan.co.uk All rights reserved.</p>
+            <p>Questions? <a href="contact@codeyourfuture.io">contact@codeyourfuture.io</a></p>
+            <p>&copy; 2025 codeyourfuture. All rights reserved.</p>
         </footer>
     </div>
 </body>
